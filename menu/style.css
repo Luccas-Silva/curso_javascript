@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #171717;
+}
+
+#header {
+    height: 10rem;
+    width: 100%;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #171717;
+    position: fixed;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #C778DD;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#logo i {
+    font-size: 2.5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#menu a {
+    display: block;
+    padding: 1rem;
+}
+
+a {
+    color: #ABB2BF;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 0.2rem solid transparent;
+}
+
+a:hover {
+    color: #C778DD;
+    font-weight: bold;
+    border-bottom: 0.2rem solid;
+}
+
+@media (max-width: 600px){
+    #menu {
+        display: block;
+        background: #171717;
+        position: absolute;
+        width: 100%;
+        top: 10rem;
+        right: 0;
+        height: 0;
+        transition: .7s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 10rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 2.5rem;
+        border-bottom: 0.2rem solid;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 3rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: #C778DD;
+    }
+}
