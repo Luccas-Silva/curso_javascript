@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -8,6 +9,7 @@
 }
 
 body {
+    font-size: 1.6rem;
     background: #8390FA;
 }
 
