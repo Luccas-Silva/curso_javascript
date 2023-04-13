@@ -93,7 +93,7 @@ a {
 }
 
 #home {
-    height: 100vh;
+    height: 90vh;
 }
 
 
@@ -142,49 +142,42 @@ a {
 }
 
 #about i {
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 
-
 #skills {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#language {
+.language {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 7rem;
-}
-
-#language a {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-#language a:hover {
-    color: #C778DD;
-}
-
-#language i {
-    margin-bottom: 1.5rem;
-    font-size: 10rem;
-}
-
-.types{
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
-#info-skills{
+.language i {
+    font-size: 8.5rem;
+    margin: 0rem 2.5rem;
+}
+
+
+.info-skills{
+    width: 70%;
     padding: 2.5rem;
     border: 0.2rem solid #ABB2BF;
+    text-align: center;
+    border-radius: 20rem;
 }
 
+.info-skills b {
+ color: #FFFFFF;
+}
 
 footer{
     text-align: center;
@@ -207,12 +200,12 @@ footer{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     #menu {
         display: block;
         background: #171717;
         position: absolute;
-        width: 100%;
+        width: 35%;
         top: 10rem;
         right: 0;
         height: 0;
@@ -230,7 +223,7 @@ footer{
 
     #menu a {
         padding: 1rem 0;
-        margin: 0 2.5rem;
+        margin: 2rem 2.5rem;
         border-bottom: 0.2rem solid;
     }
     #btn-mobile {
