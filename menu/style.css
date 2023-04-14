@@ -131,10 +131,12 @@ a {
     font-size: 4rem;
 }
 
-.project {
-    padding: 2rem;
+.prjc {
     border: 0.2rem solid #ABB2BF;
-    border-radius: 20rem;
+}
+
+.prjc img {
+    object-fit: contain;
 }
 
 
