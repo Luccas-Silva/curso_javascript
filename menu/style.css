@@ -131,12 +131,53 @@ a {
     font-size: 4rem;
 }
 
+#projects{
+    height: 150vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .prjc {
-    border: 0.2rem solid #ABB2BF;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    border: 0.2rem solid #ABB2BF; 
 }
 
 .prjc img {
-    object-fit: contain;
+    height: 35rem;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 10%;
+    
+}
+
+.prjc p {
+    padding: 1rem 0rem;
+}
+
+.prjc-text h3 {
+    border-top: 0.2rem solid #ABB2BF;
+    padding-top: 1rem;
+    color: #FFFFFF;
+}
+
+.prjc-text p {
+    padding-bottom: 2rem;
+}
+
+.prjc-text a {
+    padding: .5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 0.2rem solid #C778DD;
+}
+
+.prjc-text a:hover {
+    font-weight: bold;
+    color: #171717;
+    background: #C778DD;
 }
 
 
@@ -172,8 +213,59 @@ a {
 
 
 #skills {
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#skills .languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+#skills .languages i {
+    font-size: 10rem;
+}
+
+#skills .languages P {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 500;  
+}
+
+.languages button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: #ABB2BF;
+    
+}
+
+#java button :hover {
+    color: #ea2d2e;
+}
+#spring button :hover {
+   color: #5fb832; 
+}
+
+#mysql button :hover{
+    color: #005c83;
+}
+
+#html button :hover {
+    color: #e54d26;
+}
+#css button :hover {
+    color: #3d8fc6;
+}
+#js button :hover {
+    color: #f0db4f;
+}
+#react button :hover {
+    color: #61dafb;
 }
 
 
@@ -197,6 +289,21 @@ footer{
     background: #C778DD;
 }
 
+@media (max-height: 800px){
+    #projects {
+        height: 100vh; 
+    }
+
+    .prjc img {
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    #projects {
+        height: 200vh; 
+    }
+}
 
 @media (max-width: 800px){
     #menu {
@@ -224,6 +331,7 @@ footer{
         margin: 2rem 2.5rem;
         border-bottom: 0.2rem solid;
     }
+    
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
@@ -257,6 +365,10 @@ footer{
         width: 75%;
     }
 
+    #skills{
+        height: 100vh; 
+    }
+
 }
 
 @media (max-width: 600px){
@@ -264,8 +376,21 @@ footer{
         display: none;
      }
 
+    #projects {
+        height: 100vh; 
+    }
+
+    .prjc img {
+        display: none;
+    }
+
     #about {
         height: 100vh;
+    }
+
+    #about img {
+        height: 25rem;
+        width: 25rem;
     }
 
     #about #info {
@@ -276,11 +401,12 @@ footer{
         height: 150vh; 
     }
 
-    .language i {
-        font-size: 8rem;
+    #skills .languages {
+        padding: 2.5rem;
     }
 
-    .info-skills {
-        width: 100%;
+    #skills .languages i {
+        font-size: 7rem;
     }
+
 }
